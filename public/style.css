@@ -3,6 +3,9 @@
 }
 h1 {
   color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 ul {
   list-style: none;
@@ -12,4 +15,14 @@ a {
   text-decoration: none;
   border: 1px solid black;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+li {
 }
