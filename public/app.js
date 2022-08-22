@@ -1,9 +1,9 @@
-document.querySelector('#calculator-window')
-document.querySelector('#one').addEventListener('click', numbers)
+
+document.querySelectorAll('li').forEach((el) => {
+    el.addEventListener('click', () => { numberPressed(el.textContent) })
+})
 
 
-function numbers() {
-    const content = document.querySelector('[data-action]').textContent
-    console.log(content)
+function numberPressed(num) {
+    console.log(num)
 }
-console.log(numbers)
