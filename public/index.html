@@ -11,38 +11,45 @@
     <h1>Calculating for Fun</h1>
     <div id="container-holder">
       <div id="container">
-        <h1 id="calculator-window"></h1>
-        <div id="button_container">
+        <div class="result">
+          <div class="history">
+            <p id="history-value"></p>
+          </div>
+          <div class="output">
+            <p id="output-value"></p>
+          </div>
+        </div>
+        <div id="keyboard">
           <div class="first-row">
             <ul class="">
-              <li data-action="num">7</li>
-              <li data-action="num">8</li>
-              <li data-action="num">9</li>
-              <li data-action="operator">÷</li>
+              <li data-key="8" data-number="number">8</li>
+              <li data-key="9" data-number="number">9</li>
+              <li data-key="7" data-number="number">7</li>
+              <li data-key="divide" data-action="operator">÷</li>
             </ul>
           </div>
           <div class="second-row">
             <ul class="">
-              <li data-action="num">4</li>
-              <li data-action="num">5</li>
-              <li data-action="num">6</li>
-              <li data-action="operator">x</li>
+              <li data-key="4" data-number="number">4</li>
+              <li data-key="5" data-number="number">5</li>
+              <li data-key="6" data-number="number">6</li>
+              <li data-key="times" data-action="operator">x</li>
             </ul>
           </div>
           <div class="third-row">
             <ul class="">
-              <li data-action="num">1</li>
-              <li data-action="num">2</li>
-              <li data-action="num">3</li>
-              <li data-action="operator">-</li>
+              <li data-key="1" data-number="number">1</li>
+              <li data-key="2" data-number="number">2</li>
+              <li data-key="3" data-number="number">3</li>
+              <li data-key="minus" data-action="operator">-</li>
             </ul>
           </div>
           <div class="fourth-row">
             <ul class="">
-              <li data-action="num">0</li>
-              <li data-action="operator">reset</li>
-              <li data-action="operator">=</li>
-              <li data-action="operator">+</li>
+              <li data-key="0" data-number="number">0</li>
+              <li class="clear" data-action="clear">c</li>
+              <li data-key="equal" data-action="equal">=</li>
+              <li data-key="plus" data-action="operator">+</li>
             </ul>
           </div>
         </div>
